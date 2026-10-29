@@ -18,33 +18,25 @@
           class: tag-journal
 - heading: Working Papers
   items:
-    - number: W8
+    - number: W6
       authors: <strong>Aboagye, E.F.</strong>
       title: "Is the past a reliable guide to the flood tail? Nonstationary event losses and the design of the NFIP's reinsurance layer"
       venue: Submitted
-    - number: W7
+    - number: W5
       authors: <strong>Aboagye, E.F.</strong>
       title: Claim counts, claim sizes and excess-of-loss pricing under a common event shock
       venue: Submitted
-    - number: W6
-      authors: <strong>Aboagye, E.F.</strong> and Yamoah, S.A.
-      title: "Volatility or contagion? Decomposing crisis changes in the marginal expected shortfall of insurers and banks"
-      venue: Submitted
-    - number: W5
+    - number: W4
       authors: <strong>Aboagye, E.F.</strong>, Koomson, J. and Boamah, E.
       title: "More often or bigger? Exposure growth and tests for a shifting insurance loss tail"
       venue: Submitted
-    - number: W4
+    - number: W3
       authors: <strong>Aboagye, E.F.</strong>, Anyomi, A.A. and Anyomi, S.K.
       title: "Does index insurance fail when it matters most? Basis risk in the tail of U.S. area crop insurance"
       venue: Submitted
-    - number: W3
+    - number: W2
       authors: <strong>Aboagye, E.F.</strong>, Duah, E.A. and Adjieteh, M.
       title: Block-bootstrap inference for changes in marginal expected shortfall with recorded returns
-      venue: Submitted
-    - number: W2
-      authors: <strong>Aboagye, E.F.</strong>
-      title: "Cyber accumulation risk under sparse incident data: Conditional annual capacity certification"
       venue: Submitted
     - number: W1
       authors: <strong>Aboagye, E.F.</strong> and Peng, L.
@@ -52,21 +44,17 @@
       venue: Working paper, 2025
 - heading: Work in Progress
   items:
-    - number: R4
+    - number: R3
       authors: <strong>Aboagye, E.F.</strong> and Okine, A.N.
       title: "More often, not bigger: The shifting tail of U.S. health data breaches and the third-party channel"
       venue: Work in progress
-    - number: R3
+    - number: R2
       authors: <strong>Aboagye, E.F.</strong>, Anyomi, S.K. and Owusu, A.F.
       title: "What banks' interest rate risk models knew about their deposits"
       venue: Work in progress
-    - number: R2
+    - number: R1
       authors: <strong>Aboagye, E.F.</strong> and Huang, S.
       title: "Does geographic pooling diversify flood risk? Spatial tail dependence and the tail index in U.S. flood insurance"
-      venue: Work in progress
-    - number: R1
-      authors: <strong>Aboagye, E.F.</strong>
-      title: Estimation risk in the optimal excess-of-loss contract
       venue: Work in progress
 - heading: Other Publications
   items:
