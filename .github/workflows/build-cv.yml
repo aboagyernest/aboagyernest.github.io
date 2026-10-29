@@ -1,0 +1,57 @@
+name: Build CV PDF
+
+# Rebuilds files/Curriculum_Vitae.pdf whenever the website data changes,
+# so the website and the CV always list the same papers, courses and service.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "_pages/**"
+      - "cv-source/static/**"
+      - "scripts/build_cv.rb"
+      - ".github/workflows/build-cv.yml"
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: website-content
+  cancel-in-progress: false
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+
+      - name: Build CV from website data
+        run: ruby scripts/build_cv.rb
+
+      - name: Commit generated CV when changed
+        run: |
+          if git diff --quiet -- files/Curriculum_Vitae.pdf cv-source/Curriculum_Vitae.tex; then
+            echo "CV is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add files/Curriculum_Vitae.pdf cv-source/Curriculum_Vitae.tex
+          git commit -m "Build CV PDF from website data"
+          git push
+
+      - name: Publish the website and CV
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" || echo "Pages will rebuild on the next push."

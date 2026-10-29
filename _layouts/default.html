@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Ernest F. Aboagye" />
+  <meta name="keywords" content="Ernest Aboagye, Ernest F. Aboagye, actuarial science, insurance, catastrophe risk, reinsurance, financial econometrics, Purdue University" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+  <meta property="og:image" content="{{ site.url }}/images/photo.jpg" />
+  <meta property="profile:first_name" content="Ernest" />
+  <meta property="profile:last_name" content="Aboagye" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ernest F. Aboagye",
+    "honorificSuffix": "Ph.D., A.S.A.",
+    "jobTitle": "Senior Lecturer in Actuarial Science",
+    "worksFor": { "@type": "Organization", "name": "Purdue University", "url": "https://www.purdue.edu" },
+    "url": "https://aboagyernest.github.io/",
+    "image": "https://aboagyernest.github.io/images/photo.jpg",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Georgia State University" },
+      { "@type": "CollegeOrUniversity", "name": "Illinois State University" },
+      { "@type": "CollegeOrUniversity", "name": "University of Cape Coast" }
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=XGRZiSsAAAAJ",
+      "https://github.com/aboagyernest"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+</head>
+<body>
+{{ content }}
+<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

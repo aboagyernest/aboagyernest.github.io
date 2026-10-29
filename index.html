@@ -1,68 +1,220 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ernest Aboagye</title>
-<meta name="description" content="Ernest Aboagye, ASA. Actuarial science, insurance and catastrophe risk, financial econometrics. Purdue University.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="top">
-  <nav>
-    <a class="brand" href="index.html">Ernest Aboagye</a>
-    <div class="links">
-      <a href="index.html" class="active" aria-current="page">Home</a>
-      <a href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="scholarship.html">Scholarship</a>
-      <a href="cv.html">CV</a>
+---
+layout: default
+title: Ernest F. Aboagye | Actuarial Science, Purdue University
+description: Ernest F. Aboagye, Ph.D., A.S.A. — Senior Lecturer in Actuarial Science, Purdue University. Research in actuarial science, insurance and catastrophe risk, risk transfer, and financial econometrics.
+---
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="#">Ernest F. <span>Aboagye</span></a>
+    <button class="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="site-nav">
+      <li><a href="#appointment">About</a></li>
+      <li><a href="#publications">Research</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#awards">Scholarship</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="{{ site.data.site.cv_url | relative_url }}" target="_blank">CV ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <img class="hero-photo" src="{{ '/images/photo.jpg' | relative_url }}" alt="Ernest F. Aboagye" width="260" height="325" decoding="async" />
+    <div class="hero-text">
+      <h1 class="hero-name">{{ site.data.site.name }}</h1>
+      <div class="hero-cred">{{ site.data.site.credentials }}</div>
+      <div class="hero-position">{{ site.data.site.position }}</div>
+      <div class="hero-institution">{{ site.data.site.institution_html }}</div>
+      <div class="hero-links">
+        <a class="hero-link" href="mailto:{{ site.data.site.email }}">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          {{ site.data.site.email }}
+        </a>
+        <a class="hero-link" href="{{ site.data.site.scholar_url }}" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5 12 0z"/></svg>
+          Google Scholar
+        </a>
+        <a class="hero-link" href="{{ site.data.site.cv_url | relative_url }}" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
+          Curriculum Vitae
+        </a>
+      </div>
     </div>
-  </nav>
-</header>
+  </div>
+</div>
 
-<main>
-<section class="hero">
-  <img class="photo" src="photo.jpg" alt="Ernest Aboagye" onerror="this.style.display='none'">
-  <div>
-    <h1>Ernest Aboagye, ASA</h1>
-    <p class="role">Senior Lecturer in Actuarial Science<br>Department of Mathematics and Statistics, Purdue University</p>
-    <p class="contact"><a href="mailto:eaboagye@purdue.edu">eaboagye@purdue.edu</a> · <a href="cv.pdf">CV (PDF)</a> · <a href="https://github.com/aboagyernest">GitHub</a></p>
-    <p>I study who bears the largest insured losses and how risk transfer should be designed when the tail of the loss distribution is changing. My work combines insurance economics, actuarial science and the statistics of extremes, with applications to flood and crop insurance, cyber risk, and the systemic risk of insurers and banks. I received my Ph.D. in Risk Management and Insurance from Georgia State University in 2025, and before that I worked as an actuary at Willis Towers Watson, Milliman, New York Life and American Family Insurance.</p>
+<section id="appointment">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zm-9 9H7v-2h4v2zm6-4H7v-2h10v2zM7 4h10v2H7z"/></svg></div><h2 class="section-title">Positions</h2><div class="section-line"></div></div>
+    <div class="position-group">
+      <h3>Academic Appointment</h3>
+      <ul class="edu-list">
+        {% for item in site.data.appointment %}
+        <li class="edu-item"><div class="edu-year">{{ item.year }}</div><div><div class="edu-degree">{{ item.title }}</div><div class="edu-school">{{ item.detail }}</div></div></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="position-group">
+      <h3>Industry Experience</h3>
+      <ul class="edu-list">
+        {% for item in site.data.industry %}
+        <li class="edu-item"><div class="edu-year">{{ item.year }}</div><div><div class="edu-degree">{{ item.title }}</div><div class="edu-school">{{ item.detail }}</div></div></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Research Interests</h2>
-  <ul class="interests">
-    <li><b>Insurance and catastrophe risk:</b> climate and flood risk, public insurance programs, cyber and data-breach risk, exposure-adjusted loss models</li>
-    <li><b>Risk transfer:</b> optimal reinsurance and excess-of-loss contracts, risk measures, estimation risk in contract design</li>
-    <li><b>Financial econometrics and systemic risk:</b> contagion and tail dependence, marginal expected shortfall, risk forecasting and backtesting</li>
-    <li><b>Statistics of extremes:</b> peaks over threshold, multivariate regular variation, bootstrap inference for tail functionals</li>
-  </ul>
-</section>
-
-<section>
-  <h2>At a Glance</h2>
-  <div class="cards">
-    <a class="card" href="research.html"><span class="k">Research</span><span class="v">2 journal publications, 10 papers under review</span></a>
-    <a class="card" href="teaching.html"><span class="k">Teaching</span><span class="v">Instructor of record at Purdue and Georgia State; 4.68 / 5 mean rating at Purdue</span></a>
-    <a class="card" href="scholarship.html"><span class="k">Scholarship</span><span class="v">Spencer, Huebner, CEAR and SOA Hickman fellowships; invited seminars</span></a>
+<section id="education">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm-8 9.27V15l8 4.73L20 15v-2.73L12 16.27 4 12.27z"/></svg></div><h2 class="section-title">Education &amp; Credentials</h2><div class="section-line"></div></div>
+    <ul class="edu-list">
+      {% for item in site.data.education %}
+      <li class="edu-item"><div class="edu-year">{{ item.year }}</div><div><div class="edu-degree">{{ item.degree }}</div><div class="edu-school">{{ item.school }}</div></div></li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
-<section>
-  <h2>Education</h2>
-  <ul class="plist">
-    <li><span class="title">Ph.D., Risk Management and Insurance</span>, Georgia State University <span class="meta">2025</span></li>
-    <li><span class="title">M.S., Mathematics (Actuarial Science)</span>, Illinois State University <span class="meta">2017</span></li>
-    <li><span class="title">B.S., Actuarial Science and Statistics</span>, University of Cape Coast, Ghana <span class="meta">2014</span></li>
-  </ul>
+<section id="research">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg></div><h2 class="section-title">Research Interests</h2><div class="section-line"></div></div>
+    <div class="interests-grid">
+      {% for item in site.data.interests %}
+      <div class="interest-item"><div class="interest-dot"></div><span>{{ item }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
-</main>
 
-<footer>&copy; 2026 Ernest Aboagye · Department of Mathematics and Statistics, Purdue University</footer>
-</body>
-</html>
+<section id="awards">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><h2 class="section-title">Honors &amp; Awards</h2><div class="section-line"></div></div>
+    <div class="awards-grid">
+      {% for award in site.data.awards %}
+      <div class="award-card"><div class="award-label">{{ award.label }}</div><h3>{{ award.title }}</h3>{% if award.description %}<p>{{ award.description }}</p>{% endif %}</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div><h2 class="section-title">Publications</h2><div class="section-line"></div></div>
+    {% for group in site.data.publications %}
+    <div class="pub-section-label">{{ group.heading }}</div>
+    <ul class="pub-list">
+      {% for pub in group.items %}
+      <li class="pub-item">
+        <div class="pub-num">{{ pub.number }}</div>
+        <div class="pub-body">
+          <div class="pub-authors">{{ pub.authors }}</div>
+          <div class="pub-title">{{ pub.title }}</div>
+          <div class="pub-venue">{{ pub.venue }}</div>
+          {% if pub.links %}<div class="pub-tags">{% for link in pub.links %}<a class="pub-tag {{ link.class }}" href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% endfor %}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M18 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg></div><h2 class="section-title">Teaching</h2><div class="section-line"></div></div>
+    {% for group in site.data.teaching %}
+    <div class="teaching-group">
+      <h3>{{ group.heading }}</h3>
+      <ul class="course-list">
+        {% for course in group.courses %}
+        <li class="course-item"><span class="course-code">{{ course.code }}</span><span class="course-name">{{ course.name }}</span><span class="course-term">{{ course.term }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="activities">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 012 2v9a2 2 0 01-2 2h-6v3h3v2H7v-2h3v-3H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2v9h16V6H4zm4 3h8v2H8V9zm0 3h5v2H8v-2z"/></svg></div><h2 class="section-title">Presentations &amp; Conferences</h2><div class="section-line"></div></div>
+    <div class="activity-columns">
+      {% for column in site.data.activities %}
+      <div>
+        {% for group in column.column %}
+        <div class="activity-group">
+          <h3>{{ group.heading }}</h3>
+          <ul class="activity-list">
+            {% for item in group.items %}
+            <li class="activity-item"><span class="activity-year">{{ item.year }}</span><div><div class="activity-desc">{{ item.description }}</div>{% if item.place != "" %}<div class="activity-place">{{ item.place }}</div>{% endif %}</div></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 2v4h4l-4-4zM8 11h8v2H8v-2zm0 4h5v2H8v-2zm9.7-.7l1.4 1.4-4.6 4.6-2.6-2.6 1.4-1.4 1.2 1.2 3.2-3.2z"/></svg></div><h2 class="section-title">Service</h2><div class="section-line"></div></div>
+    <div class="teaching-group">
+      <h3>Peer Review</h3>
+      <ul class="course-list service-list">
+        {% for item in site.data.service %}
+        {% assign journals = item.journals | split: ', ' %}
+        <li class="course-item"><span class="course-code service-label">{{ item.label | escape }}</span><span class="course-name">{% for journal in journals %}<em>{{ journal | escape }}</em>{% unless forloop.last %}, {% endunless %}{% endfor %}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="teaching-group">
+      <h3>Other Service</h3>
+      <ul class="activity-list">
+        {% for item in site.data.other_service %}
+        <li class="activity-item"><span class="activity-year">{{ item.year }}</span><div><div class="activity-desc">{{ item.role }}</div></div></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="teaching-group">
+      <h3>Professional Memberships</h3>
+      <div class="interests-grid">
+        {% for item in site.data.memberships %}
+        <div class="interest-item"><div class="interest-dot"></div><span>{{ item }}</span></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-header"><div class="section-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 011.91 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg></div><h2 class="section-title">Contact</h2><div class="section-line"></div></div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Get in Touch</h3>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a></div></div></div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="contact-label">Department</div><div class="contact-value">{{ site.data.site.institution_html }}</div></div></div>
+      </div>
+      <div class="contact-card">
+        <h3>Online Profiles</h3>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5 12 0z"/></svg></div><div><div class="contact-label">Google Scholar</div><div class="contact-value"><a href="{{ site.data.site.scholar_url }}" target="_blank">View Profile ↗</a></div></div></div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></div><div><div class="contact-label">GitHub</div><div class="contact-value"><a href="{{ site.data.site.github_url }}" target="_blank">github.com/aboagyernest ↗</a></div></div></div>
+        <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg></div><div><div class="contact-label">Curriculum Vitae</div><div class="contact-value"><a href="{{ site.data.site.cv_url | relative_url }}" target="_blank">Download PDF ↗</a></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; {{ site.data.site.footer_year }} Ernest F. Aboagye &nbsp;&middot;&nbsp; Senior Lecturer in Actuarial Science, Purdue University &nbsp;&middot;&nbsp; {{ site.data.site.email }}</p>
+</footer>

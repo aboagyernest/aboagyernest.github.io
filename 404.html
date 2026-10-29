@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>Redirecting | Ernest F. Aboagye</title>
+  <script>
+    const redirects = {
+      '/research.html': '/#publications',
+      '/research': '/#publications',
+      '/teaching.html': '/#teaching',
+      '/teaching': '/#teaching',
+      '/scholarship.html': '/#awards',
+      '/scholarship': '/#awards',
+      '/cv.html': '/files/Curriculum_Vitae.pdf',
+      '/cv': '/files/Curriculum_Vitae.pdf',
+      '/cv.pdf': '/files/Curriculum_Vitae.pdf'
+    };
+    const target = redirects[window.location.pathname.replace(/\/$/, '')] || '/';
+    window.location.replace(target);
+  </script>
+</head>
+<body>
+  <p>The page has moved. <a href="/">Continue to Ernest F. Aboagye's homepage</a>.</p>
+</body>
+</html>

@@ -1,0 +1,84 @@
+- heading: Peer-reviewed Journal Articles
+  items:
+    - number: J2
+      authors: <strong>Aboagye, E.F.</strong>, Asimit, V., Fung, T.C., Peng, L. and Wang, Q.
+      title: A revisit of the optimal excess-of-loss contract
+      venue: <em>European Journal of Operational Research</em>, 2025
+      links:
+        - label: Journal
+          url: https://doi.org/10.1016/j.ejor.2024.11.027
+          class: tag-journal
+    - number: J1
+      authors: <strong>Aboagye, E.F.</strong>, Ko, S.I.M., Lo, C.C., Hsiao, C.Y.L. and Peng, L.
+      title: A contagion test with unspecified heteroscedastic errors
+      venue: <em>Journal of Economic Dynamics and Control</em>, 2024
+      links:
+        - label: Journal
+          url: https://doi.org/10.1016/j.jedc.2023.104804
+          class: tag-journal
+- heading: Working Papers
+  items:
+    - number: W8
+      authors: <strong>Aboagye, E.F.</strong>
+      title: "Is the past a reliable guide to the flood tail? Nonstationary event losses and the design of the NFIP's reinsurance layer"
+      venue: Submitted
+    - number: W7
+      authors: <strong>Aboagye, E.F.</strong>
+      title: Claim counts, claim sizes and excess-of-loss pricing under a common event shock
+      venue: Submitted
+    - number: W6
+      authors: <strong>Aboagye, E.F.</strong> and Yamoah, S.A.
+      title: "Volatility or contagion? Decomposing crisis changes in the marginal expected shortfall of insurers and banks"
+      venue: Submitted
+    - number: W5
+      authors: <strong>Aboagye, E.F.</strong>, Koomson, J. and Boamah, E.
+      title: "More often or bigger? Exposure growth and tests for a shifting insurance loss tail"
+      venue: Submitted
+    - number: W4
+      authors: <strong>Aboagye, E.F.</strong>, Anyomi, A.A. and Anyomi, S.K.
+      title: "Does index insurance fail when it matters most? Basis risk in the tail of U.S. area crop insurance"
+      venue: Submitted
+    - number: W3
+      authors: <strong>Aboagye, E.F.</strong>, Duah, E.A. and Adjieteh, M.
+      title: Block-bootstrap inference for changes in marginal expected shortfall with recorded returns
+      venue: Submitted
+    - number: W2
+      authors: <strong>Aboagye, E.F.</strong>
+      title: "Cyber accumulation risk under sparse incident data: Conditional annual capacity certification"
+      venue: Submitted
+    - number: W1
+      authors: <strong>Aboagye, E.F.</strong> and Peng, L.
+      title: Model-based conditional risk forecasts
+      venue: Working paper, 2025
+- heading: Work in Progress
+  items:
+    - number: R4
+      authors: <strong>Aboagye, E.F.</strong> and Okine, A.N.
+      title: "More often, not bigger: The shifting tail of U.S. health data breaches and the third-party channel"
+      venue: Work in progress
+    - number: R3
+      authors: <strong>Aboagye, E.F.</strong>, Anyomi, S.K. and Owusu, A.F.
+      title: "What banks' interest rate risk models knew about their deposits"
+      venue: Work in progress
+    - number: R2
+      authors: <strong>Aboagye, E.F.</strong> and Huang, S.
+      title: "Does geographic pooling diversify flood risk? Spatial tail dependence and the tail index in U.S. flood insurance"
+      venue: Work in progress
+    - number: R1
+      authors: <strong>Aboagye, E.F.</strong>
+      title: Estimation risk in the optimal excess-of-loss contract
+      venue: Work in progress
+- heading: Other Publications
+  items:
+    - number: O2
+      authors: <strong>Aboagye, E.F.</strong>, Borketey, B. and Danquah, K.
+      title: Optimizing travel insurance purchase detection using predictive models
+      venue: <em>International Journal of Automation, Artificial Intelligence and Machine Learning</em>, 2024
+      links:
+        - label: Article
+          url: https://researchlakejournals.com/index.php/AAIML/article/download/376/344
+          class: tag-journal
+    - number: O1
+      authors: <strong>Aboagye, E.F.</strong>, Borketey, B., Borketey, D. and Danquah, K.
+      title: Predictive accuracy of the probability of credit card default using machine learning
+      venue: <em>International Research Journal of Modernization in Engineering Technology and Science</em>, 2022

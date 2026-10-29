@@ -1,0 +1,13 @@
+title: Ernest F. Aboagye
+url: https://aboagyernest.github.io
+baseurl: ""
+description: Ernest F. Aboagye, Ph.D., A.S.A. — Senior Lecturer in Actuarial Science, Departments of Mathematics & Statistics, Purdue University.
+markdown: kramdown
+data_dir: _pages
+exclude:
+  - README.md
+  - scripts
+  - cv-source
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,38 @@
+- column:
+    - heading: Invited and Seminar Presentations
+      items:
+        - year: 2025
+          description: Purdue University, Departments of Mathematics &amp; Statistics
+          place: <em>A revisit of the optimal excess-of-loss insurance contract</em>
+        - year: 2024
+          description: Bentley University, Department of Mathematical Sciences
+          place: <em>A revisit of the optimal excess-of-loss insurance contract</em>
+        - year: 2024
+          description: Illinois State University, Actuarial, Insurance &amp; Statistics Seminar
+          place: <em>A revisit of the optimal excess-of-loss insurance contract</em>
+        - year: 2023
+          description: Georgia State University, Greenberg School of Risk Science
+          place: <em>A contagion test with unspecified heteroscedastic errors</em>
+        - year: 2022
+          description: Georgia State University, Greenberg School of Risk Science
+          place: <em>Optimizing travel insurance purchase detection using predictive models</em>
+- column:
+    - heading: Conference Participation
+      items:
+        - year: 2024
+          description: American Risk &amp; Insurance Association (ARIA) Annual Meeting
+          place: Denver, US
+        - year: 2024
+          description: "27th International Congress on Insurance: Mathematics &amp; Economics (IME)"
+          place: ''
+        - year: 2021
+          description: American Risk &amp; Insurance Association (ARIA) Annual Meeting
+          place: Online
+        - year: 2016–2024
+          description: International Association of Black Actuaries Annual Conference
+          place: ''
+    - heading: Other Talks
+      items:
+        - year: 2015
+          description: "Speaker, Annual Celebration of the UCC Society of Actuarial Science Students: <em>The role of actuarial science in nation building</em>"
+          place: Cape Coast, Ghana

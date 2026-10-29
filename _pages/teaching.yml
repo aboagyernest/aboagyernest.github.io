@@ -1,0 +1,65 @@
+- heading: Instructor — Purdue University
+  courses:
+    - code: STAT 472
+      name: Fundamental Long-Term Actuarial Mathematics (SOA UEC)
+      term: Spring 2027
+    - code: MA 373
+      name: Financial Mathematics (SOA UEC)
+      term: Spring 2026, 2027
+    - code: CS/STAT 242
+      name: Introduction to Data Science
+      term: Spring 2026
+    - code: MA/STAT 416
+      name: Probability
+      term: Spring 2026
+    - code: MA 158
+      name: Precalculus
+      term: Fall 2025, 2026
+- heading: Instructor — Georgia State University
+  courses:
+    - code: AS 3230
+      name: Financial Mathematics (SOA UEC)
+      term: Fall 2023
+    - code: AS 4140L
+      name: Probability Lab
+      term: Fall 2022–Spring 2025
+    - code: AS 3230L
+      name: Financial Mathematics Lab
+      term: Fall 2022–Spring 2025
+- heading: Instructor and Teaching Assistant — Illinois State University
+  courses:
+    - code: MAT 113
+      name: Mathematical Reasoning Lab (Instructor)
+      term: Fall 2015, Spring 2016
+    - code: MAT 280
+      name: Financial Mathematics (TA)
+      term: Summer 2016
+    - code: MAT 480
+      name: Applications of Actuarial Principles (TA)
+      term: Fall 2016
+    - code: MGT 100
+      name: Statistical Reasoning (TA)
+      term: Fall 2015, 2016
+    - code: MGT 227
+      name: Operations Management (TA)
+      term: Spring 2016, 2017
+- heading: Teaching Assistant — University of Cape Coast
+  courses:
+    - code: MAT 101
+      name: Algebra &amp; Trigonometry
+      term: Fall 2014
+    - code: MAT 203
+      name: Further Calculus
+      term: Fall 2014
+    - code: ACT 212
+      name: Mathematics of Investment &amp; Credit
+      term: Fall 2014
+    - code: ACT 304
+      name: Life Contingencies II
+      term: Spring 2015
+    - code: ACT 401
+      name: Survival Models
+      term: Spring 2015
+    - code: ACT 404
+      name: Pension Funds &amp; Social Security
+      term: Spring 2015
