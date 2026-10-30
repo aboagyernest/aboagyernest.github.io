@@ -26,3 +26,12 @@ The photo is `images/photo.jpg`.
 `files/Curriculum_Vitae.pdf` (the CV linked on the site) is generated from the same `_pages/*.yml` files by `scripts/build_cv.rb`. On every change to `_pages/`, the **Build CV PDF** GitHub Action rebuilds the PDF and commits it, so the website and CV never disagree. The only CV-only content is `cv-source/static/skills.tex`.
 
 To build locally (needs Ruby and LaTeX): `ruby scripts/build_cv.rb`.
+
+## New papers are added automatically
+
+Every day the **Update publications** GitHub Action looks for new papers and adds them to Working Papers (and so to the CV):
+
+- **arXiv:** papers whose author list includes "Ernest F. Aboagye" or "Ernest Aboagye".
+- **SSRN:** papers whose SSRN record carries the ORCID iD 0009-0000-6582-8536 (add the ORCID to your SSRN profile). Name-only SSRN matches are ignored because other researchers share the name.
+
+If a new arXiv or SSRN posting has the same title as a paper already listed, the link is added to that entry instead of a duplicate. Identity settings are in `publication-sources.yml`. To run it immediately, open **Actions > Update publications > Run workflow**.

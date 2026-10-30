@@ -1,0 +1,6 @@
+# Author identity used to discover papers on arXiv and on SSRN (via SSRN's Crossref records).
+# A paper is added only when one of its authors matches one of these full names or the ORCID iD.
+author: Ernest F. Aboagye
+aliases:
+  - Ernest Aboagye
+orcid: 0009-0000-6582-8536
