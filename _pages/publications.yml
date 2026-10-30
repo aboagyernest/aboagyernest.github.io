@@ -8,6 +8,9 @@
         - label: Journal
           url: https://doi.org/10.1016/j.ejor.2024.11.027
           class: tag-journal
+        - label: arXiv
+          url: https://arxiv.org/abs/2405.00188
+          class: tag-arxiv
     - number: J1
       authors: <strong>Aboagye, E.F.</strong>, Ko, S.I.M., Lo, C.C., Hsiao, C.Y.L. and Peng, L.
       title: A contagion test with unspecified heteroscedastic errors
@@ -20,7 +23,7 @@
   items:
     - number: W6
       authors: <strong>Aboagye, E.F.</strong>
-      title: "Is the past a reliable guide to the flood tail? Nonstationary event losses and the design of the NFIP's reinsurance layer"
+      title: Is the past a reliable guide to the flood tail? Nonstationary event losses and the design of the NFIP's reinsurance layer
       venue: Submitted
     - number: W5
       authors: <strong>Aboagye, E.F.</strong>
@@ -28,15 +31,15 @@
       venue: Submitted
     - number: W4
       authors: <strong>Aboagye, E.F.</strong> and Yamoah, S.A.
-      title: "Volatility or contagion? Decomposing crisis changes in the marginal expected shortfall of insurers and banks"
+      title: Volatility or contagion? Decomposing crisis changes in the marginal expected shortfall of insurers and banks
       venue: Submitted
     - number: W3
       authors: <strong>Aboagye, E.F.</strong>, Koomson, J. and Boamah, E.
-      title: "More often or bigger? Exposure growth and tests for a shifting insurance loss tail"
+      title: More often or bigger? Exposure growth and tests for a shifting insurance loss tail
       venue: Submitted
     - number: W2
       authors: <strong>Aboagye, E.F.</strong>, Anyomi, A.A. and Anyomi, S.K.
-      title: "Does index insurance fail when it matters most? Basis risk in the tail of U.S. area crop insurance"
+      title: Does index insurance fail when it matters most? Basis risk in the tail of U.S. area crop insurance
       venue: Submitted
     - number: W1
       authors: <strong>Aboagye, E.F.</strong> and Peng, L.
@@ -46,15 +49,15 @@
   items:
     - number: R3
       authors: <strong>Aboagye, E.F.</strong> and Okine, A.N.
-      title: "More often, not bigger: The shifting tail of U.S. health data breaches and the third-party channel"
+      title: 'More often, not bigger: The shifting tail of U.S. health data breaches and the third-party channel'
       venue: Work in progress
     - number: R2
       authors: <strong>Aboagye, E.F.</strong>, Anyomi, S.K. and Owusu, A.F.
-      title: "What banks' interest rate risk models knew about their deposits"
+      title: What banks' interest rate risk models knew about their deposits
       venue: Work in progress
     - number: R1
       authors: <strong>Aboagye, E.F.</strong> and Huang, S.
-      title: "Does geographic pooling diversify flood risk? Spatial tail dependence and the tail index in U.S. flood insurance"
+      title: Does geographic pooling diversify flood risk? Spatial tail dependence and the tail index in U.S. flood insurance
       venue: Work in progress
 - heading: Other Publications
   items:
