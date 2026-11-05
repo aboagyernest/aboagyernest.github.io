@@ -143,6 +143,7 @@ def without_links(value)
 end
 
 tex = String.new
+tex << "% GENERATED FILE: do not edit. Changes here are overwritten and never reach the website.\n% Edit _pages/*.yml instead; this CV and the website rebuild from those files.\n\n"
 tex << <<~TEX
   \\documentclass[10pt]{article}
   \\pagestyle{empty}
