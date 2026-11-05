@@ -21,18 +21,22 @@
           class: tag-journal
 - heading: Working Papers
   items:
-    - number: W4
+    - number: W5
       authors: <strong>Aboagye, E.F.</strong>
       title: Is the past a reliable guide to the flood tail? Nonstationary event losses and the design of the NFIP's reinsurance layer
       venue: Submitted
-    - number: W3
+    - number: W4
       authors: <strong>Aboagye, E.F.</strong>
       title: Claim counts, claim sizes and excess-of-loss pricing under a common event shock
       venue: Submitted
-    - number: W2
+    - number: W3
       authors: <strong>Aboagye, E.F.</strong>, Koomson, J. and Boamah, E.
       title: More often or bigger? Exposure growth and tests for a shifting insurance loss tail
       venue: Submitted
+    - number: W2
+      authors: <strong>Aboagye, E.F.</strong>
+      title: Estimation risk in the optimal excess-of-loss contract
+      venue: Working paper
     - number: W1
       authors: <strong>Aboagye, E.F.</strong> and Peng, L.
       title: Model-based conditional risk forecasts
